@@ -1,19 +1,23 @@
 :root {
-  --color-brand: #2E2F42;
-  --color-primary: #FFFFFF;
-  --color-primaty-light: #F4F4FD;
- }
+  --c-brand: #fd9222;
+  --c-primary: #111;
+  --c-primary-tr: #1111111a;
+  --c-primary-light: #fff;
+  --c-primary-light-tr: #ffffffb2;
+  --c-background: #1e1823;
+  --c-background-light: #fafafa;
+}
  
- body {
-  background-color: #ffffff;
-  color:#434455;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
- }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--c-primary);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--c-background-light);
+}
+
  h1, h2, h3, h4, h5, h6, p {
    margin-top: 0;
    margin-bottom: 0;
@@ -35,3 +39,15 @@
   margin: 0 auto;
 }
     /* header*/
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
